@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dailyMarketDataReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dmdr-2024-02-24.xsd">
+  <version>1</version>
+  <sbsef>SPECIMEN SEF INC.</sbsef>
+  <date>2024-03-14</date>
+  <generated>2024-03-14T19:30:47-05:00</generated>
+  <sbsTnr>
+    <sbsNm>S40 EUR 5Y. .LCH</sbsNm>
+    <upi>000000000001</upi>
+    <tenor>P5Y</tenor>
+    <ccy>USD</ccy>
+    <prcFrmt>BdPricPctg</prcFrmt>
+    <tradCnt>227500000</tradCnt>
+    <ttlNtnlAmtTraddUsd>100000000</ttlNtnlAmtTraddUsd>
+    <ttlNtnlAmtBlckTradsUsd>14285714.29</ttlNtnlAmtBlckTradsUsd>
+    <opngPrc>89.45</opngPrc>
+    <clsgPrc>88.2</clsgPrc>
+    <sttlmPrc>88.200009</sttlmPrc>
+    <lwstPrc>88.25</lwstPrc>
+    <lwstPrcTyp>O</lwstPrcTyp>
+    <hgstPrc>90.125</hgstPrc>
+    <hgstPrcTyp>S</hgstPrcTyp>
+    <dscrtnryAuthrtyApld>Y</dscrtnryAuthrtyApld>
+    <dscrtnryAuthrtyApldFtnt>Settlement price adjusted by Specimen Inc. to reflect quantum mirroring.</dscrtnryAuthrtyApldFtnt>
+  </sbsTnr>
+  <sbsTnr>
+    <sbsNm>S40 XO 5Y. .LCH</sbsNm>
+    <upi>000000000002</upi>
+    <tenor>P5Y</tenor>
+    <ccy>GBP</ccy>
+    <prcFrmt>SprdBsisPts</prcFrmt>
+    <tradCnt>56000000</tradCnt>
+    <ttlNtnlAmtTraddUsd>600000000</ttlNtnlAmtTraddUsd>
+    <ttlNtnlAmtBlckTradsUsd>200000000</ttlNtnlAmtBlckTradsUsd>
+    <opngPrc>471.25</opngPrc>
+    <clsgPrc>468.5</clsgPrc>
+    <lwstPrc>468.5</lwstPrc>
+    <lwstPrcTyp>O</lwstPrcTyp>
+    <hgstPrc>474.5</hgstPrc>
+    <hgstPrcTyp>B</hgstPrcTyp>
+    <dscrtnryAuthrtyApld>Y</dscrtnryAuthrtyApld>
+    <dscrtnryAuthrtyApldFtnt>Specimen Inc. did not adjust the highest bid although it was probably a typo.</dscrtnryAuthrtyApldFtnt>
+  </sbsTnr>
+  <sbsTnr>
+    <sbsNm>S40 XO 5Y. .ICC</sbsNm>
+    <upi>000000000003</upi>
+    <tenor>P5Y</tenor>
+    <ccy>EUR</ccy>
+    <prcFrmt>SprdDcml</prcFrmt>
+    <tradCnt>30000000</tradCnt>
+    <ttlNtnlAmtTraddUsd>600000000</ttlNtnlAmtTraddUsd>
+    <ttlNtnlAmtBlckTradsUsd>150000000</ttlNtnlAmtBlckTradsUsd>
+    <opngPrc>474.5</opngPrc>
+    <clsgPrc>472</clsgPrc>
+    <lwstPrc>472</lwstPrc>
+    <lwstPrcTyp>O</lwstPrcTyp>
+    <hgstPrc>475.75</hgstPrc>
+    <hgstPrcTyp>S</hgstPrcTyp>
+    <dscrtnryAuthrtyApld>Y</dscrtnryAuthrtyApld>
+    <dscrtnryAuthrtyApldFtnt>Opening, closing, and offer prices adjusted for flux capacitance effect.</dscrtnryAuthrtyApldFtnt>
+  </sbsTnr>
+  <sbsTnr>
+    <sbsNm>S40 EUR V1 - LCH</sbsNm>
+    <upi>000000000003</upi>
+    <tenor>P18M</tenor>
+    <ccy>RMB</ccy>
+    <prcFrmt>BdPricPctg</prcFrmt>
+    <tradCnt>40000000</tradCnt>
+    <ttlNtnlAmtTraddUsd>500000000</ttlNtnlAmtTraddUsd>
+    <ttlNtnlAmtBlckTradsUsd>71428571</ttlNtnlAmtBlckTradsUsd>
+    <opngPrc>89</opngPrc>
+    <clsgPrc>89</clsgPrc>
+    <lwstPrc>89</lwstPrc>
+    <lwstPrcTyp>S</lwstPrcTyp>
+    <hgstPrc>89</hgstPrc>
+    <hgstPrcTyp>B</hgstPrcTyp>
+    <dscrtnryAuthrtyApld>Y</dscrtnryAuthrtyApld>
+    <dscrtnryAuthrtyApldFtnt>Highest bid price does not reflect withdrawn bid at 89.01.</dscrtnryAuthrtyApldFtnt>
+  </sbsTnr>
+  <sbsTnr>
+    <sbsNm>S40 XO V1 - LCH</sbsNm>
+    <upi>000000000003</upi>
+    <tenor>P30D</tenor>
+    <ccy>USD</ccy>
+    <prcFrmt>PrmCcy</prcFrmt>
+    <tradCnt>10000000</tradCnt>
+    <ttlNtnlAmtTraddUsd>500000000</ttlNtnlAmtTraddUsd>
+    <ttlNtnlAmtBlckTradsUsd>250000000</ttlNtnlAmtBlckTradsUsd>
+    <opngPrc>469.25</opngPrc>
+    <clsgPrc>469.25</clsgPrc>
+    <lwstPrc>469.25</lwstPrc>
+    <lwstPrcTyp>S</lwstPrcTyp>
+    <hgstPrc>469.25</hgstPrc>
+    <hgstPrcTyp>S</hgstPrcTyp>
+    <dscrtnryAuthrtyApld>Y</dscrtnryAuthrtyApld>
+    <dscrtnryAuthrtyApldFtnt>*</dscrtnryAuthrtyApldFtnt>
+  </sbsTnr>
+  <sbsTnr>
+    <sbsNm>S40 EUR V1 - ICC</sbsNm>
+    <tenor>P1Y1M1D</tenor>
+    <ccy>GBP</ccy>
+    <prcFrmt>PrmPctNtnl</prcFrmt>
+    <tradCnt>80000000</tradCnt>
+    <ttlNtnlAmtTraddUsd>500000000</ttlNtnlAmtTraddUsd>
+    <ttlNtnlAmtBlckTradsUsd>55555555</ttlNtnlAmtBlckTradsUsd>
+    <opngPrc>89</opngPrc>
+    <clsgPrc>89.75</clsgPrc>
+    <lwstPrc>89</lwstPrc>
+    <lwstPrcTyp>S</lwstPrcTyp>
+    <hgstPrc>89</hgstPrc>
+    <hgstPrcTyp>B</hgstPrcTyp>
+  </sbsTnr>
+  <sbsTnr>
+    <sbsNm>S40 XO V1 - ICC</sbsNm>
+    <tenor>P6M</tenor>
+    <ccy>EUR</ccy>
+    <prcFrmt>FxdRateDcml</prcFrmt>
+    <tradCnt>20000000</tradCnt>
+    <ttlNtnlAmtTraddUsd>200000000</ttlNtnlAmtTraddUsd>
+    <ttlNtnlAmtBlckTradsUsd>40000000</ttlNtnlAmtBlckTradsUsd>
+    <opngPrc>469.25</opngPrc>
+    <clsgPrc>473</clsgPrc>
+    <lwstPrc>469.25</lwstPrc>
+    <lwstPrcTyp>S</lwstPrcTyp>
+    <hgstPrc>469.25</hgstPrc>
+    <hgstPrcTyp>S</hgstPrcTyp>
+  </sbsTnr>
+  <sbsTnr>
+    <sbsNm>S40 EUR V1 - LCH</sbsNm>
+    <tenor>P10Y</tenor>
+    <ccy>RMB</ccy>
+    <prcFrmt>BdPricPctg</prcFrmt>
+    <tradCnt>50000000</tradCnt>
+    <ttlNtnlAmtTraddUsd>100000000</ttlNtnlAmtTraddUsd>
+    <ttlNtnlAmtBlckTradsUsd>12500000</ttlNtnlAmtBlckTradsUsd>
+    <opngPrc>88.25</opngPrc>
+    <clsgPrc>88.25</clsgPrc>
+    <lwstPrc>88.25</lwstPrc>
+    <lwstPrcTyp>S</lwstPrcTyp>
+    <hgstPrc>88.25</hgstPrc>
+    <hgstPrcTyp>B</hgstPrcTyp>
+  </sbsTnr>
+
+  <sbsTnr>
+    <sbsNm>EM 40 V1 - ICC</sbsNm>
+    <tenor>P14M</tenor>
+    <ccy>USD</ccy>
+    <prcFrmt>SprdDcml</prcFrmt>
+    <tradCnt>15000000</tradCnt>
+    <ttlNtnlAmtTraddUsd>500000000</ttlNtnlAmtTraddUsd>
+    <ttlNtnlAmtBlckTradsUsd>71428571</ttlNtnlAmtBlckTradsUsd>
+    <opngPrc>93.875</opngPrc>
+    <clsgPrc>93.875</clsgPrc>
+    <lwstPrc>93.875</lwstPrc>
+    <lwstPrcTyp>S</lwstPrcTyp>
+    <hgstPrc>93.885</hgstPrc>
+    <hgstPrcTyp>B</hgstPrcTyp>
+    <dscrtnryAuthrtyApld>Y</dscrtnryAuthrtyApld>
+    <dscrtnryAuthrtyApldFtnt>**</dscrtnryAuthrtyApldFtnt>
+  </sbsTnr>
+  <sbsTnr>
+    <sbsNm> OIS 20231023 20231025 2MEUR EUR 12M1 178 12M1 178 5 - LCH</sbsNm>
+    <upi>000000000010</upi>
+    <tenor>P12M</tenor>
+    <ccy>USD</ccy>
+    <prcFrmt>BdPricPctg</prcFrmt>
+    <tradCnt>25000000</tradCnt>
+    <ttlNtnlAmtTraddUsd>100000000</ttlNtnlAmtTraddUsd>
+    <ttlNtnlAmtBlckTradsUsd>50000000</ttlNtnlAmtBlckTradsUsd>
+    <opngPrc>10.5</opngPrc>
+    <clsgPrc>10.5</clsgPrc>
+    <lwstPrc>10.5</lwstPrc>
+    <lwstPrcTyp>S</lwstPrcTyp>
+    <hgstPrc>10.5</hgstPrc>
+    <hgstPrcTyp>S</hgstPrcTyp>
+    <dscrtnryAuthrtyApld>Y</dscrtnryAuthrtyApld>
+    <dscrtnryAuthrtyApldFtnt>*</dscrtnryAuthrtyApldFtnt>
+  </sbsTnr>
+  <mtdUsedToDtrmnNmnlPrc>We set sail on this new sea because there is new knowledge to be gained, and new rights to be won, and they must be won and used for the progress of all people. For space science, like nuclear science and all technology, has no conscience of its own. </mtdUsedToDtrmnNmnlPrc>
+  <mtdUsedToDtrmnSttlmPrc>Whether it will become a force for good or ill depends on man, and only if the United States occupies a position of pre-eminence can we help decide whether this new ocean will be a sea of peace or a new terrifying theater of war. I do not say that we should or will go unprotected against the hostile misuse of space any more than we go unprotected against the hostile use of land or sea, but I do say that space can be explored and mastered without feeding the fires of war, without repeating the mistakes that man has made in extending his writ around this globe of ours.  There is no strife, no prejudice, no national conflict in outer space as yet. Its hazards are hostile to us all. Its conquest deserves the best of all mankind, and its opportunity for peaceful cooperation may never come again. But why, some say, the Moon? Why choose this as our goal? And they may well ask, why climb the highest mountain?  Why, 35 years ago, fly the Atlantic? Why does Rice play Texas? </mtdUsedToDtrmnSttlmPrc>
+  <dscrtnExpltn>We choose to go to the Moon. We choose to go to the Moon in this decade and do the other things, not because they are easy, but because they are hard; because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one we intend to win, and the others, too. </dscrtnExpltn>
+  <dscrtnMnnrDesc>* All prices adjusted ex post facto, res ipsa loquitor.   ** Reflects unmatched bid 1 microsecond prior to close of business.  </dscrtnMnnrDesc>
+</dailyMarketDataReport>
