@@ -1,5 +1,5 @@
 # dmdr
-Repository for the schema, sample files, and PDF renderer required under 17 CFR 242.85.
+Repository for the schema, sample files, and PDF renderer required under 17 CFR 242.825.
 
 To use the Report Generator:
 1.  If the files are in a .zip archive, unzip it to your computer.
