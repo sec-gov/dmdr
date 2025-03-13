@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This schema was created by staff of the U.S. Securities and Exchange 
+Commission. Data and content created by government employees within the scope 
+of their employment are not subject to domestic copyright protection. 17 
+U.S.C. 105. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:documentation xml:lang="en">Daily Market Data Report, Regulation SE Rule 825(c).</xs:documentation>
+  </xs:annotation>
+  <xs:element name="dailyMarketDataReport" type="DAILY_MARKET_DATA_REPORT_TYPE"/>
+  <xs:complexType name="DAILY_MARKET_DATA_REPORT_TYPE">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Document type for a daily market data report. Regulation SE Rule 825(c).</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="version" type="VERSION_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Version of this daily market data report schema</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="sbsef" type="STRING_SHORT_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Security-Based Swap Execution Facility (SBSEF) Name</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="date" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>Business date of data in the report. Regulation SE Rule 825 (c)(1)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="generated" type="xs:dateTime" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Date and time the report was generated. Regulation SE Rule 825 (c)(1)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="sbsTnr" type="SBS_TENOR_TYPE" minOccurs="0" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Security-based Swap Name and Tenor. Regulation SE Rule 825 (c)(1)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="mtdUsedToDtrmnNmnlPrc" type="STRING_LONG_TYPE">
+        <xs:annotation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="mtdUsedToDtrmnSttlmPrc" type="STRING_LONG_TYPE">
+        <xs:annotation>
+          <xs:documentation>The method used by the SBSEF to determine settlement prices, up to 5000 characters. Regulation SE Rule 825(c)(2)(i)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:sequence minOccurs="0">
+      <xs:element name="dscrtnExpltn" type="STRING_LONG_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">An explanation, up to 5000 characters, that the SBSEF may use discretion in determining the opening and/or closing ranges or the settlement prices. Include only if SBSEF uses discretion. Regulation SE Rule 825(c)(2)(ii)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="dscrtnMnnrDesc" type="STRING_LONG_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">A description, up to 5000 characters, of how the SBSEF may use discretion in determining the opening and/or closing ranges or the settlement prices. Include only if SBSEF uses discretion. Regulation SE Rule 825(c)(2)(ii)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      </xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="VERSION_TYPE">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PRICE_TYPE">
+    <xs:restriction base="xs:decimal">
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="SBS_TENOR_TYPE">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Swap Name and Tenor. Regulation SE Rule 825 (c)(1)
+</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+       <xs:element name="sbsNm" type="STRING_SHORT_TYPE">
+         <xs:annotation>
+           <xs:documentation xml:lang="en">Descriptive name of the security-based swap (SBS) traded. Regulation SE Rule 825 (c)(1)</xs:documentation>
+         </xs:annotation>
+       </xs:element>
+      <xs:element name="upi" type="UPI_TYPE" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">UPI of the security-based swap (SBS) traded. Regulation SE Rule 825 (c)(1)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="tenor" type="xs:duration">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The period until expiration of the contract traded (Tenor) in the ISO 8601 format P#Y#M#D#. Regulation SE Rule 825 (c)(1)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ccy" type="CURRENCY_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">For each SBS tenor, the currency in which the price notional amount (or, for equity SBS, the premium) is quoted.  ISO 4217. Regulation SE Rule 825 (c)(1)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="prcFrmt" type="PRICE_FORMAT_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">For each SBS tenor, whether the prices are quoted using the "spread (currency)" (SprdCcy) convention, the "spread (decimal)" (SprdDcml) convention, the "spread (basis points)" (SprdBsisPts) convention, the "bond price (percentage)" (BdPricPctg), the "premium (currency)" (PrmCcy) convention, the " premium as percentage of notional" (PrmPctNtnl) convention, or the "fixed rate (decimal)" (FxdRateDcml) convention. Only these values are allowed. Regulation SE Rule 825 (c)(1).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="tradCnt" type="NONNEGATIVE_INTEGER_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Number of trades of swap tenor, a whole non-negative number. Regulation SE Rule 825 (c)(1)(i)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ttlNtnlAmtTraddUsd" type="NONNEGATIVE_DECIMAL_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Total notional amount traded for each SBS tenor (should not be zero). Regulation SE Rule 825 (c)(1)(ii)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ttlNtnlAmtBlckTradsUsd" type="NONNEGATIVE_DECIMAL_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Total notional amount trade of block trades for each SBS tenor (may be zero). Regulation SE Rule 825(c)(1)(iii)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="opngPrc" type="PRICE_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Opening price of each SBS tenor. Regulation SE Rule 825(c)(1)(iv)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="clsgPrc" type="PRICE_TYPE">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Closing price of each SBS tenor. Regulation SE Rule 825(c)(1)(iv)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="sttlmPrc" type="PRICE_TYPE" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Settlement price of each SBS tenor, if different from closing price. Regulation SE Rule 825(c)(1)(v)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="lwstPrc" type="PRICE_TYPE" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The lowest price of a sale or offer, whichever is lower, that the security-based swap execution facility reasonably determines
+accurately reflects market conditions. Regulation SE Rule 825(c)(1)(vi)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="lwstPrcTyp" type="LOWEST_PRICE_DESC_TYPE" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Indicate whether the lowest price represents a sale (S) or offer (O).  Regulation SE Rule 825(c)(1)(vi)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="hgstPrc" type="PRICE_TYPE" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The highest price of a sale or bid, whichever is higher, that the security-based swap execution facility reasonably determines
+accurately reflects market conditions. Regulation SE Rule 825(c)(1)(vi)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="hgstPrcTyp" type="HIGHEST_PRICE_DESC_TYPE" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Indicate whether the highest price represents a sale (S) or bid (B).  Regulation SE Rule 825(c)(1)(vi)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:sequence minOccurs="0">
+        <xs:element name="dscrtnryAuthrtyApld" type="YN_TYPE" fixed="Y">
+          <xs:annotation>
+            <xs:documentation>
+        Y indicating that SBSEF used discretion in determining this price. 
+        To be included for each price listed for each SBS tenor. 
+        Regulation SE Rule 825(c)(2)(ii)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="dscrtnryAuthrtyApldFtnt" type="STRING_SHORT_TYPE">
+          <xs:annotation>
+            <xs:documentation>Footnote corresponding to "Y" indications that SBSEF used discretion in determining this price. SBSEF may use asterisk rather than footnote. Regulation SE Rule 825(c)(2)(ii)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="UPI_TYPE">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">ISO 4914 Unique Product Identifier (UPI), exactly 12 digits or upper case letters.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9A-Z]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="CURRENCY_TYPE">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="PRICE_FORMAT_TYPE">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Convention used for price quotes.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SprdCcy">
+        <xs:annotation>
+          <xs:documentation>spread (currency)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SprdDcml">
+        <xs:annotation>
+          <xs:documentation>spread (decimal)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SprdBsisPts">
+        <xs:annotation>
+          <xs:documentation>spread (basis points)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BdPricPctg">
+        <xs:annotation>
+          <xs:documentation>bond price (percentage)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PrmCcy">
+        <xs:annotation>
+          <xs:documentation>premium (currency)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PrmPctNtnl">
+        <xs:annotation>
+          <xs:documentation>premium as percentage of notional</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FxdRateDcml">
+        <xs:annotation>
+          <xs:documentation>fixed rate (decimal)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="NONNEGATIVE_INTEGER_TYPE">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Nonnegative Integer</xs:documentation>
+    </xs:annotation>
+    <xs:union memberTypes="xs:nonNegativeInteger"/>
+  </xs:simpleType>
+  <xs:simpleType name="NONNEGATIVE_DECIMAL_TYPE">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Nonnegative Decimal number of any size or decimal places</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0.0"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="LOWEST_PRICE_DESC_TYPE">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Indicate whether the lowest price represents a S (sale) or O (offer). Regulation SE Rule 825(c)(1)(vi)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="S">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Sale</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="O">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Offer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="HIGHEST_PRICE_DESC_TYPE">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Indicate whether the highest price represents a S (sale) or B (bid). Regulation SE Rule 825(c)(1)(vi)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="S">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Sale</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="B">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Bid</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="YN_TYPE">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Y or N indicating Yes or No</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Y"/>
+      <xs:enumeration value="N"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="STRING_SHORT_TYPE">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A short text string of 1 to 100 characters.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="STRING_LONG_TYPE">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A long text string of 1 to 5000 characters.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1"/>
+      <xs:maxLength value="5000"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
