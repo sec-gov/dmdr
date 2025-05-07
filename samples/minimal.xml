@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dailyMarketDataReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dmdr-20240331.xsd">
-  <version>1</version>
+<dailyMarketDataReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="dmdr-20250331.xsd">
+  <version>2</version>
   <sbsef>SPECIMEN SEF INC.</sbsef>
   <date>2024-03-29</date>
   <generated>2024-03-29T14:49:20+00:00</generated>
@@ -15,7 +15,7 @@
     <opngPrc>314</opngPrc>
     <clsgPrc>314.2</clsgPrc>
     <sttlmPrc>314.16</sttlmPrc>
-    <lwstPrc>314</lwstPrc>
+    <lwstPrc>-314</lwstPrc>
     <lwstPrcTyp>O</lwstPrcTyp>
     <hgstPrc>314.2</hgstPrc>
     <hgstPrcTyp>S</hgstPrcTyp>
@@ -137,11 +137,11 @@
     <tradCnt>15000000</tradCnt>
     <ttlNtnlAmtTraddUsd>15000000000000</ttlNtnlAmtTraddUsd>
     <ttlNtnlAmtBlckTradsUsd>7500000000000</ttlNtnlAmtBlckTradsUsd>
-    <opngPrc>8.05</opngPrc>
-    <clsgPrc>8.05</clsgPrc>
-    <lwstPrc>8.05</lwstPrc>
+    <opngPrc>-8.05</opngPrc>
+    <clsgPrc>-8.05</clsgPrc>
+    <lwstPrc>-8.05</lwstPrc>
     <lwstPrcTyp>S</lwstPrcTyp>
-    <hgstPrc>8.05</hgstPrc>
+    <hgstPrc>-8.05</hgstPrc>
     <hgstPrcTyp>B</hgstPrcTyp>
     <dscrtnryAuthrtyApld>Y</dscrtnryAuthrtyApld>
     <dscrtnryAuthrtyApldFtnt>**</dscrtnryAuthrtyApldFtnt>
