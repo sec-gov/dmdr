@@ -1,0 +1,58 @@
+{
+  "name": "dmdr",
+  "repositoryURL": "https://github.com/sec-gov/dmdr",
+  "description": "Schema, sample files, and PDF renderer required under 17 CFR 242.606",
+  "permissions": {
+    "licenses": [
+      {
+        "URL": "https://github.com/sec-gov/dmdr/blob/master/LICENSE.md",
+        "name": "CC0 1.0"
+      }
+    ],
+    "usageType": "openSource"
+  },
+  "tags": [
+    "US Securities and Exchange Commission",
+    "JavaScript",
+    "PDF",
+    "17 CFR 242.606",
+    "Daily Market Data Report"
+  ],
+  "contact": {
+    "email": "StructuredData@sec.gov"
+  },
+  "organization": "US Securities and Exchange Commission",
+  "status": "Production",
+  "vcs": "git",
+  "homepageURL": "https://www.sec.gov/",
+  "languages": [
+    "JavaScript",
+    "HTML"
+  ],
+  "relatedCode": [
+    {
+      "name": "oh",
+      "URL": "https://github.com/sec-gov/oh"
+    },
+    {
+      "name": "ndsp",
+      "URL": "https://github.com/sec-gov/ndsp"
+    }
+  ],
+  "reusedCode": [
+    {
+      "name": "pdfkit",
+      "URL": "https://github.com/sec-gov/pdfkit"
+    },
+    {
+      "name": "pdfmake",
+      "URL": "https://github.com/sec-gov/pdfmake"
+    }
+  ],
+  "date": {
+    "created": "2024-02-24",
+    "lastModified": "2025-03-11",
+    "metadataLastUpdated": "2025-06-27"
+  },
+  "laborHours": 40
+}

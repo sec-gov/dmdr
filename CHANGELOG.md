@@ -5,3 +5,4 @@
 * 2024-03-20 Pric -> Prc, mtdUsd -> mtdUsed for improved element names.
 * 2024-03-22 OGC edits to technical guide, two name changes.  Possibly more on the way.
 * 2025-03-11 Permit negative spreads.  New schema 20250331.
+* 2025-06-27 Update license to CC0 1.0.
